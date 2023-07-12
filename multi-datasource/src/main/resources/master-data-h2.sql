@@ -1,6 +1,6 @@
-DELETE FROM sys_user;
+DELETE FROM master_user;
 
-INSERT INTO sys_user (id, user_name, age, email) VALUES
+INSERT INTO master_user (id, user_name, age, email) VALUES
                                             (1, 'Jone', 18, 'test1@baomidou.com'),
                                             (2, 'Jack', 20, 'test2@baomidou.com'),
                                             (3, 'Tom', 28, 'test3@baomidou.com'),

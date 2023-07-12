@@ -1,6 +1,6 @@
-DELETE FROM sys_user;
+DELETE FROM slave_user;
 
-INSERT INTO sys_user (id, user_name, age, email) VALUES
+INSERT INTO slave_user (id, user_name, age, email) VALUES
                                             (6, 'Jone', 18, 'test1@baomidou.com'),
                                             (7, 'Jack', 20, 'test2@baomidou.com'),
                                             (8, 'Tom', 28, 'test3@baomidou.com'),

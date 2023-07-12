@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS sys_user;
+DROP TABLE IF EXISTS master_user;
 
-CREATE TABLE sys_user
+CREATE TABLE master_user
 (
     id BIGINT NOT NULL COMMENT '主键ID',
     user_name VARCHAR(30) NULL DEFAULT NULL COMMENT '姓名',
