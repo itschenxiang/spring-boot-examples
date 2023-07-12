@@ -21,4 +21,9 @@ public class MultiDataSourceService {
         return userMapper.selectList(null);
     }
 
+    @Transactional(rollbackFor = Exception.class)
+    public List<SysUser> accessPrimaryDataSource() {
+        return userMapper.selectList(null);
+    }
+    
 }

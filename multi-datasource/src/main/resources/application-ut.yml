@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    dynamic:
+      datasource:
+        master:
+          url: jdbc:h2:mem:master
+          username: root
+          password: 123456
+          driver-class-name: org.h2.Driver
+          init:
+            schema: classpath:master-schema-h2.sql
+            data: classpath:master-data-h2.sql
+        slave_1:
+          url: jdbc:h2:mem:slave_1
+          username: root
+          password: 123456
+          driver-class-name: org.h2.Driver
+          init:
+            schema: classpath:slave_1-schema-h2.sql
+            data: classpath:slave_1-data-h2.sql
+      strict: false
+      primary: master
