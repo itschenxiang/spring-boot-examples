@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    username: root
+    password: test
+    url: jdbc:h2:mem:master
+  sql:
+    init:
+      schema-locations: classpath:database/schema-h2.sql
+      data-locations: classpath:database/data-h2.sql

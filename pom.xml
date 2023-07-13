@@ -5,6 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>multi-datasource</module>
+        <module>spring-transactional-analysis</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
