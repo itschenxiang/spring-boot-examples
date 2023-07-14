@@ -21,6 +21,8 @@ class CommonSpringBootTestApplicationTests {
         Assert.assertEquals("common-spring-boot-test", appName);
         int someTtl = ApplicationConfigurationUtils.getIntProperty("app.someTtl", 10);
         Assert.assertEquals(60, someTtl);
+        int notExistProperty = ApplicationConfigurationUtils.getIntProperty("app.notExist", 10);
+        Assert.assertEquals(10, notExistProperty);
     }
     
 }
