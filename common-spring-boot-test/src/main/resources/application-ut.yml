@@ -1,0 +1,3 @@
+app:
+  name: common-spring-boot-test
+  someTtl: 60
