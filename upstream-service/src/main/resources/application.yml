@@ -1,0 +1,12 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: upstream-service
+  cloud:
+    consul:
+      discovery:
+        service-name: upstream-service
+        instance-id: ${spring.application.name}-${spring.cloud.client.ip-address}-${server.port}
+        heartbeat:
+          enabled: true

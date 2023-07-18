@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: downstream-service
+  cloud:
+    consul:
+      discovery:
+        service-name: downstream-service
+#        health-check-path: ${server.servlet.context-path}/actuator/health
+        instance-id: ${spring.application.name}-${spring.cloud.client.ip-address}-${server.port}
+        heartbeat:
+          enabled: true
